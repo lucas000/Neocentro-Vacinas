@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 import FeatherIcon from 'react-native-vector-icons/Feather';
+import {RectButton} from 'react-native-gesture-handler';
 
 export const Container = styled.View`
   flex: 1;
@@ -9,11 +10,14 @@ export const Container = styled.View`
 export const Header = styled.View`
   flex-direction: row;
   background-color: #f7f7f7;
+  height: 56px;
 `;
+
+export const BackButton = styled(RectButton)``;
 
 export const IconArrowBack = styled(FeatherIcon)`
   margin-left: 20px;
-  font-size: 20px;
+  font-size: 24px;
   color: #000;
   margin-top: 15px;
 `;
@@ -29,6 +33,7 @@ export const TitleHeader = styled.Text`
 `;
 
 export const SubTitleHeader = styled.Text`
-  font-size: 14px;
+  font-size: 12px;
+  margin-top: 5px;
   color: #000;
 `;
