@@ -3,7 +3,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
 import Main from './pages/Main';
-import SearchCity from './pages/SearchCity';
+import SelectAge from './pages/SelectAge';
 
 const AppStack = createStackNavigator();
 
@@ -18,7 +18,7 @@ const Routes = () => {
           },
         }}>
         <AppStack.Screen name={'Main'} component={Main} />
-        <AppStack.Screen name={'SearchCity'} component={SearchCity} />
+        <AppStack.Screen name={'SelectAge'} component={SelectAge} />
       </AppStack.Navigator>
     </NavigationContainer>
   );

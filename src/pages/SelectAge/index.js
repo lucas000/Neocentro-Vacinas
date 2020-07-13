@@ -11,7 +11,7 @@ import {
 } from './styles';
 import {useNavigation} from '@react-navigation/native';
 
-const SearchCity = () => {
+const SelectAge = () => {
   const navigation = useNavigation();
 
   function handleGoBack() {
@@ -34,4 +34,4 @@ const SearchCity = () => {
   );
 };
 
-export default SearchCity;
+export default SelectAge;

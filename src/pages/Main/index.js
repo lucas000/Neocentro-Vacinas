@@ -20,7 +20,7 @@ const Main = () => {
   const navigation = useNavigation();
 
   function handleScheduleVaccine() {
-    navigation.navigate('SearchCity');
+    navigation.navigate('SelectAge');
   }
 
   return (
