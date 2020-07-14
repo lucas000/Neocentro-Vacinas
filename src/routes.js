@@ -12,6 +12,7 @@ const Routes = () => {
     <NavigationContainer>
       <AppStack.Navigator
         headerMode="none"
+        translucent
         screenOptions={{
           cardStyle: {
             backgroundColor: '#3498db',

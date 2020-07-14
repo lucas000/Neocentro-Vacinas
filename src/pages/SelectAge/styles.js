@@ -1,25 +1,24 @@
 import styled from 'styled-components/native';
 import FeatherIcon from 'react-native-vector-icons/Feather';
-import {RectButton} from 'react-native-gesture-handler';
 
 export const Container = styled.View`
   flex: 1;
-  background-color: #008789;
+  background-color: #ffffff;
 `;
 
 export const Header = styled.View`
   flex-direction: row;
-  background-color: #f7f7f7;
+  align-items: center;
+  background-color: #ffffff;
   height: 56px;
 `;
 
-export const BackButton = styled(RectButton)``;
+export const BackButton = styled.TouchableOpacity``;
 
 export const IconArrowBack = styled(FeatherIcon)`
   margin-left: 20px;
   font-size: 24px;
   color: #000;
-  margin-top: 15px;
 `;
 
 export const ContainerTitleHeader = styled.View`
@@ -34,6 +33,40 @@ export const TitleHeader = styled.Text`
 
 export const SubTitleHeader = styled.Text`
   font-size: 12px;
-  margin-top: 5px;
   color: #000;
+`;
+
+export const GroupVaccines = styled.View`
+  align-self: center;
+  align-content: center;
+  width: 80%;
+  margin-top: 60px;
+`;
+
+export const ChooseTextCategory = styled.Text`
+  font-size: 20px;
+  color: #000;
+  font-family: 'Roboto-Medium';
+`;
+
+export const ButtonGroup = styled.TouchableOpacity`
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90px;
+  background: #1abc9c;
+  margin-top: 25px;
+`;
+
+export const TextNameGroup = styled.Text`
+  font-size: 20px;
+  color: #fff;
+  font-family: 'Roboto-Medium';
+`;
+
+export const TextAgeGroup = styled.Text`
+  font-size: 20px;
+  color: #fff;
+  font-family: 'Roboto-Medium';
 `;
