@@ -22,6 +22,22 @@ const SelectAge = () => {
     navigation.goBack();
   }
 
+  function handleGroupChildish() {
+    navigation.navigate('Vaccines');
+  }
+
+  function handleGroupTeenager() {
+    navigation.navigate('Vaccines');
+  }
+
+  function handleGroupAdult() {
+    navigation.navigate('Vaccines');
+  }
+
+  function handleGroupElderly() {
+    navigation.navigate('Vaccines');
+  }
+
   return (
     <Container>
       <Header>
@@ -33,22 +49,22 @@ const SelectAge = () => {
       <GroupVaccines>
         <ChooseTextCategory>Escolha uma categoria, {user}.</ChooseTextCategory>
 
-        <ButtonGroup onPress={() => {}}>
+        <ButtonGroup onPress={handleGroupChildish}>
           <TextNameGroup>Infantil</TextNameGroup>
           <TextAgeGroup>0 a 10 anos</TextAgeGroup>
         </ButtonGroup>
 
-        <ButtonGroup onPress={() => {}}>
+        <ButtonGroup onPress={handleGroupTeenager}>
           <TextNameGroup>Adolescente</TextNameGroup>
           <TextAgeGroup>10 a 19 anos</TextAgeGroup>
         </ButtonGroup>
 
-        <ButtonGroup onPress={() => {}}>
+        <ButtonGroup onPress={handleGroupAdult}>
           <TextNameGroup>Adulto</TextNameGroup>
           <TextAgeGroup>19 a 29 anos</TextAgeGroup>
         </ButtonGroup>
 
-        <ButtonGroup onPress={() => {}}>
+        <ButtonGroup onPress={handleGroupElderly}>
           <TextNameGroup>Idoso</TextNameGroup>
           <TextAgeGroup>mais de 60 anos</TextAgeGroup>
         </ButtonGroup>

@@ -4,6 +4,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 import Main from './pages/Main';
 import SelectAge from './pages/SelectAge';
+import Vaccines from './pages/Vaccines';
 
 const AppStack = createStackNavigator();
 
@@ -20,6 +21,7 @@ const Routes = () => {
         }}>
         <AppStack.Screen name={'Main'} component={Main} />
         <AppStack.Screen name={'SelectAge'} component={SelectAge} />
+        <AppStack.Screen name={'Vaccines'} component={Vaccines} />
       </AppStack.Navigator>
     </NavigationContainer>
   );
