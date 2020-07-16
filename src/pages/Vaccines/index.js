@@ -50,6 +50,17 @@ const Vaccines = () => {
 
       <ContainerListVaccines>
         <Vaccine />
+        <Vaccine />
+        <Vaccine />
+        <Vaccine />
+        <Vaccine />
+        <Vaccine />
+        <Vaccine />
+        <Vaccine />
+        <Vaccine />
+        <Vaccine />
+        <Vaccine />
+        <Vaccine />
       </ContainerListVaccines>
       <ButtonContinue>
         <TextButtonContinue>Continuar</TextButtonContinue>

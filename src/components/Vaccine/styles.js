@@ -3,12 +3,12 @@ import FeatherIcon from 'react-native-vector-icons/Feather';
 
 export const Container = styled.View`
   flex: 1;
-  margin: 20px;
   flex-direction: row;
-  width: 100%;
   background-color: #f7f7f7;
   align-items: center;
   border-radius: 5px;
+  margin: 10px 10px 4px 10px;
+  padding: 8px 8px 8px 5px;
 `;
 
 export const PropertiesVaccine = styled.View`

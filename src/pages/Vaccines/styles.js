@@ -7,7 +7,7 @@ export const Container = styled.View`
   background-color: #ffffff;
 `;
 
-export const Header = styled.View`
+export const Header = styled.SafeAreaView`
   flex-direction: row;
   align-items: center;
   background-color: #ffffff;
@@ -72,9 +72,8 @@ export const IconSearch = styled(FeatherIcon)`
   align-self: flex-end;
 `;
 
-export const ContainerListVaccines = styled.View`
-  width: 89.9%;
-  height: 120px;
-  justify-content: center;
-  margin-left: 7px;
+export const ContainerListVaccines = styled.ScrollView`
+  margin-top: 8px;
+  margin-bottom: 12px;
+  margin-left: 14px;
 `;
