@@ -71,3 +71,10 @@ export const IconSearch = styled(FeatherIcon)`
   margin-right: 15px;
   align-self: flex-end;
 `;
+
+export const ContainerListVaccines = styled.View`
+  width: 89.9%;
+  height: 120px;
+  justify-content: center;
+  margin-left: 7px;
+`;

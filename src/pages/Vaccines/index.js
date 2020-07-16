@@ -11,10 +11,12 @@ import {
   SearchVaccineContainer,
   InputNameVaccine,
   SearchButton,
-  IconSearch
+  IconSearch,
+  ContainerListVaccines
   } from './styles';
 
 import {useNavigation} from '@react-navigation/native';
+import Vaccine from '../../components/Vaccine';
 
 const Vaccines = () => {
   const navigation = useNavigation();
@@ -46,6 +48,9 @@ const Vaccines = () => {
         </SearchButton>
       </SearchVaccineContainer>
 
+      <ContainerListVaccines>
+        <Vaccine />
+      </ContainerListVaccines>
       <ButtonContinue>
         <TextButtonContinue>Continuar</TextButtonContinue>
       </ButtonContinue>
