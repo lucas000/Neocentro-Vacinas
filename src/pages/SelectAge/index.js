@@ -14,7 +14,7 @@ import {
 import {useNavigation} from '@react-navigation/native';
 
 const SelectAge = () => {
-  const [user, setUser] = useState('Lucas');
+  const [user, setUser] = useState('Jim');
 
   const navigation = useNavigation();
 

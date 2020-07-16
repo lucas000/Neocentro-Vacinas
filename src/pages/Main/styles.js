@@ -53,6 +53,7 @@ export const LogoCompany = styled.Image`
   height: 200px;
   margin-left: 100px;
 `;
+
 export const CompanyName = styled.Text`
   font-size: 22px;
   margin-top: 30px;

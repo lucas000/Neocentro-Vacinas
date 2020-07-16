@@ -12,10 +12,11 @@ import {
 } from './styles';
 
 import logo from '../../assets/logo.png';
+import profile from '../../assets/profile.jpg';
 import {useNavigation} from '@react-navigation/native';
 
 const Main = () => {
-  const [user, setUser] = useState('Lucas');
+  const [user, setUser] = useState('Jim');
 
   const navigation = useNavigation();
 
@@ -29,7 +30,7 @@ const Main = () => {
         <TextMain>Bem vindo, {user}</TextMain>
 
         <ContainerAvatar>
-          <UserAvatar source={logo} />
+          <UserAvatar source={profile} />
         </ContainerAvatar>
       </WelcomeContainer>
 
