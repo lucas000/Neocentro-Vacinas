@@ -38,6 +38,7 @@ export const ButtonContinue = styled(RectButton)`
   border-radius: 5px;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
 `;
 
 export const TextButtonContinue = styled.Text`
@@ -47,7 +48,7 @@ export const TextButtonContinue = styled.Text`
 `;
 
 export const SearchVaccineContainer = styled.View`
-  width: 90%;
+  width: 91%;
   height: 40px;
   flex-direction: row;
   align-items: center;
@@ -64,7 +65,8 @@ export const InputNameVaccine = styled.TextInput`
   padding: 5px 5px 5px 15px;
 `;
 
-export const SearchButton = styled.TouchableOpacity``;
+export const SearchButton = styled.TouchableOpacity`
+`;
   
 export const IconSearch = styled(FeatherIcon)`
   font-size: 24px;

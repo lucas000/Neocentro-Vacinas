@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import {
   Container,
@@ -20,10 +20,15 @@ import Vaccine from '../../components/Vaccine';
 
 const Vaccines = () => {
   const navigation = useNavigation();
+  const [value, onChangeText] = useState('');
 
   function handleGoBack() {
     navigation.goBack();
   }
+
+  function handleToSelectDateAppointment() {
+    navigation.navigate('SelectDateAppointment');
+  };
 
   return (
     <Container>
@@ -37,8 +42,8 @@ const Vaccines = () => {
 
       <SearchVaccineContainer>
         <InputNameVaccine 
-           onChangeText={() => {}}
-           value={''}
+           onChangeText={text => onChangeText(text)}
+           value={value}
            placeholder="Busque uma vacina"
            placeholderTextColor="#000000"
         />
@@ -62,7 +67,7 @@ const Vaccines = () => {
         <Vaccine />
         <Vaccine />
       </ContainerListVaccines>
-      <ButtonContinue>
+      <ButtonContinue onPress={handleToSelectDateAppointment}>
         <TextButtonContinue>Continuar</TextButtonContinue>
       </ButtonContinue>
     </Container>
