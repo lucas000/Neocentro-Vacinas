@@ -7,6 +7,7 @@ import SelectAge from './pages/SelectAge';
 import Vaccines from './pages/Vaccines';
 import SelectDateAppointment from './pages/SelectDateAppointment';
 import SummaryOrder from './pages/SummaryOrder';
+import PaymentWay from './pages/PaymentWay';
 
 const AppStack = createStackNavigator();
 
@@ -21,6 +22,7 @@ const Routes = () => {
             backgroundColor: '#3498db',
           },
         }}>
+        <AppStack.Screen name={'PaymentWay'} component={PaymentWay} /> 
         <AppStack.Screen name={'Main'} component={Main} />
         <AppStack.Screen name={'SelectAge'} component={SelectAge} />
         <AppStack.Screen name={'Vaccines'} component={Vaccines} />

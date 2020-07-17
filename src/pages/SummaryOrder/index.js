@@ -43,6 +43,10 @@ const SummaryOrder = () => {
     navigation.goBack();
   }
 
+  function handleContinue() {
+    navigation.navigate('PaymentWay');
+  }
+
   return (
     <Container>
       <Header>
@@ -108,7 +112,7 @@ const SummaryOrder = () => {
           <TextButtonBack>Voltar</TextButtonBack>
         </ButtonBack>
 
-        <ButtonContinue>
+        <ButtonContinue onPress={handleContinue}>
           <TextButtonContinue>Continuar</TextButtonContinue>
         </ButtonContinue>
       </ContainerOptionsButtons>
