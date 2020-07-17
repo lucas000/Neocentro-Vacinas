@@ -11,15 +11,16 @@ import {
   ContainerCalendar,
   ButtonContinue,
   TextButtonContinue,
+  PickerDate
   } from './styles';
-
   
 import {useNavigation} from '@react-navigation/native';
+
 import profile from '../../assets/profile.jpg';
-import { Alert } from 'react-native';
+import { Picker } from 'react-native';
 
 const SelectDateAppointment = () => {
-
+  const [selectedValue, setSelectedValue] = useState("Selecionar data");
   const navigation = useNavigation();
 
   function handleGoBack() {
@@ -27,7 +28,7 @@ const SelectDateAppointment = () => {
   }
 
   function handleToSelectDateAppointment() {
-    Alert.alert('OI', 'Oi');
+    navigation.navigate('SummaryOrder');
   };
 
   return (
@@ -45,6 +46,23 @@ const SelectDateAppointment = () => {
       </Header>
 
       <ContainerCalendar />
+
+      <PickerDate
+        selectedValue={selectedValue}
+        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+        >
+        <Picker.Item label="23/07/2020 - 08:00" value="08:00" />
+        <Picker.Item label="23/07/2020 - 09:00" value="09:00" />
+        <Picker.Item label="23/07/2020 - 10:00" value="10:00" />
+        <Picker.Item label="23/07/2020 - 11:00" value="11:00" />
+        <Picker.Item label="23/07/2020 - 12:00" value="12:00" />
+        <Picker.Item label="23/07/2020 - 13:00" value="13:00" />
+        <Picker.Item label="23/07/2020 - 14:00" value="14:00" />
+        <Picker.Item label="23/07/2020 - 15:00" value="15:00" />
+        <Picker.Item label="23/07/2020 - 16:00" value="16:00" />
+        <Picker.Item label="23/07/2020 - 17:00" value="17:00" />
+        <Picker.Item label="23/07/2020 - 18:00" value="19:00" />
+      </PickerDate>
 
       <ButtonContinue onPress={handleToSelectDateAppointment}>
         <TextButtonContinue>Continuar</TextButtonContinue>

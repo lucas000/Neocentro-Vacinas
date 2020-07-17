@@ -1,7 +1,6 @@
 import styled from 'styled-components/native';
 import { RectButton } from 'react-native-gesture-handler';
 import FeatherIcon from 'react-native-vector-icons/Feather';
-
 export const Container = styled.View`
   flex: 1;
   background-color: #ffffff;
@@ -53,6 +52,7 @@ export const ButtonContinue = styled(RectButton)`
   background: #1abc9c;
   border-radius: 5px;
   align-items: center;
+  margin-top: 100px;
   justify-content: center;
 `;
 
@@ -60,4 +60,11 @@ export const TextButtonContinue = styled.Text`
   font-size: 18px;
   color: #f7f7f7;
   font-family: 'Roboto-Regular';
+`;
+
+export const PickerDate = styled.Picker`
+  height: 60px; 
+  width: 92%;
+  background-color: #f7f7f7;
+  border-radius: 5px;
 `;

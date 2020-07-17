@@ -6,6 +6,7 @@ import Main from './pages/Main';
 import SelectAge from './pages/SelectAge';
 import Vaccines from './pages/Vaccines';
 import SelectDateAppointment from './pages/SelectDateAppointment';
+import SummaryOrder from './pages/SummaryOrder';
 
 const AppStack = createStackNavigator();
 
@@ -24,6 +25,7 @@ const Routes = () => {
         <AppStack.Screen name={'SelectAge'} component={SelectAge} />
         <AppStack.Screen name={'Vaccines'} component={Vaccines} />
         <AppStack.Screen name={'SelectDateAppointment'} component={SelectDateAppointment} />
+        <AppStack.Screen name={'SummaryOrder'} component={SummaryOrder} /> 
       </AppStack.Navigator>
     </NavigationContainer>
   );
