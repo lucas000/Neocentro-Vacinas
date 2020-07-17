@@ -35,7 +35,7 @@ const PaymentWay = () => {
   }
 
   function handleContinue() {
-    navigation.navigate('PaymentWay');
+    navigation.navigate('Login');
   }
 
   return (
@@ -90,8 +90,8 @@ const PaymentWay = () => {
       </ContainerInputsDataCard>
 
       <ButtonContinue onPress={handleContinue}>
-          <TextButtonContinue>Continuar</TextButtonContinue>
-        </ButtonContinue>
+        <TextButtonContinue>Continuar</TextButtonContinue>
+      </ButtonContinue>
     </Container>
   );
 };

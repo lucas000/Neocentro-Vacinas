@@ -92,7 +92,6 @@ export const InputCVVCard = styled.TextInput`
   padding-left: 10px;
 `;
 
-
 export const CPF = styled.TextInput`
   font-size: 16px;
   width: 328px;
