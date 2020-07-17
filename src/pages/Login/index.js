@@ -5,7 +5,7 @@ import {
   Header,
   BackButton,
   IconArrowBack,
-  PaymentWayText,
+  LoginText,
   ContainerInputsDataCard,
   ContainerNameAndNumber,
   InputNameVaccine,
@@ -36,6 +36,9 @@ const Login = () => {
     navigation.navigate('Main');
   }
 
+  function handleSignUp() {
+    navigation.navigate('SignUp');
+  }
   return (
     <Container>
       <Header>
@@ -43,7 +46,7 @@ const Login = () => {
           <IconArrowBack size={24} name="arrow-left" style={{color: '#000'}} />
         </BackButton>
 
-        <PaymentWayText>Entrar</PaymentWayText>
+        <LoginText>Entrar</LoginText>
       </Header>
 
       <ContainerInputsDataCard>
@@ -73,7 +76,7 @@ const Login = () => {
           <TextButtonLoginSocial>Entrar com Facebook</TextButtonLoginSocial>
         </ButtonLoginSocial>
 
-        <ButtonNewAccount onPress={handleLogin}>
+        <ButtonNewAccount onPress={handleSignUp}>
           <TextButtonNewAccount>Novo cadastro</TextButtonNewAccount>
         </ButtonNewAccount>
       </ContainerInputsDataCard>

@@ -24,7 +24,7 @@ export const IconArrowBack = styled(FeatherIcon)`
   color: #000;
 `;
 
-export const PaymentWayText = styled.Text`
+export const LoginText = styled.Text`
   font-size: 20px;
   margin-left: 125px;
   color: #000;
