@@ -18,21 +18,24 @@ import {
   PaymentWayText,
   ButtonLogout,
   IconLogout,
-  LogoutText
+  LogoutText,
 } from './styles';
 
 import {useNavigation} from '@react-navigation/native';
 
 const AccountLogged = () => {
-
   const navigation = useNavigation();
-  
+
   function handleGoBack() {
     navigation.goBack();
   }
 
-  function handleGoBack() {
-    navigation.goBack();
+  function handleGoVaccinesSchedule() {
+    navigation.navigate('Appointments');
+  }
+
+  function handleClickProfile() {
+    navigation.navigate('UpdateAccount');
   }
 
   function handlePaymentWay() {
@@ -54,22 +57,30 @@ const AccountLogged = () => {
       </Header>
 
       <ContainerAccountOptions>
-        <ButtonLoginInAccount onPress={() => {}}>
+        <ButtonLoginInAccount onPress={handleClickProfile}>
           <IconPerfil size={24} name="user" style={{color: '#008789'}} />
           <PerfilText>Perfil</PerfilText>
         </ButtonLoginInAccount>
 
-        <ButtonVaccinescheduled onPress={() => {}}>
-          <IconVaccinescheduled size={24} name="calendar" style={{color: '#008789'}} />
+        <ButtonVaccinescheduled onPress={handleGoVaccinesSchedule}>
+          <IconVaccinescheduled
+            size={24}
+            name="calendar"
+            style={{color: '#008789'}}
+          />
           <VaccinescheduledText>Vacinas agendadas</VaccinescheduledText>
         </ButtonVaccinescheduled>
 
-        <ButtonPaymentWay onPress={() => {}}>
-          <IconButtonPaymentWay size={24} name="credit-card" style={{color: '#008789'}} />
+        <ButtonPaymentWay onPress={handlePaymentWay}>
+          <IconButtonPaymentWay
+            size={24}
+            name="credit-card"
+            style={{color: '#008789'}}
+          />
           <PaymentWayText>Forma de pagamento</PaymentWayText>
         </ButtonPaymentWay>
 
-        <ButtonLogout onPress={() => {}}>
+        <ButtonLogout onPress={handleLogout}>
           <IconLogout size={24} name="log-out" style={{color: '#008789'}} />
           <LogoutText>Sair</LogoutText>
         </ButtonLogout>

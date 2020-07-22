@@ -21,14 +21,15 @@ export const TextMain = styled.Text`
   margin-left: 50px;
 `;
 
+export const ButtonUserAvatar = styled.TouchableOpacity`
+  flex-direction: row;
+`;
+
 export const UserAvatar = styled.Image`
   width: 48px;
   height: 48px;
-  margin-left: 80px;
+  margin-left: 100px;
   border-radius: 22px;
-`;
-export const ContainerAvatar = styled.View`
-  margin-left: 20px;
 `;
 
 export const ButtonSchedule = styled(RectButton)`

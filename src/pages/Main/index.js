@@ -9,6 +9,7 @@ import {
   LogoCompany,
   CompanyName,
   TextButtonSchedule,
+  ButtonUserAvatar,
 } from './styles';
 
 import logo from '../../assets/logo.png';
@@ -20,6 +21,9 @@ const Main = () => {
 
   const navigation = useNavigation();
 
+  function handleAccountOptions() {
+    navigation.navigate('AccountLogged');
+  }
   function handleScheduleVaccine() {
     navigation.navigate('SelectAge');
   }
@@ -29,9 +33,9 @@ const Main = () => {
       <WelcomeContainer>
         <TextMain>Bem vindo, {user}</TextMain>
 
-        <ContainerAvatar>
+        <ButtonUserAvatar onPress={handleAccountOptions}>
           <UserAvatar source={profile} />
-        </ContainerAvatar>
+        </ButtonUserAvatar>
       </WelcomeContainer>
 
       <ButtonSchedule onPress={handleScheduleVaccine}>

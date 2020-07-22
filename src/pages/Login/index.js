@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 
 import {
   Container,
@@ -16,13 +16,12 @@ import {
   RecoveryPassword,
   TextButtonLoginSocial,
   ButtonNewAccount,
-  TextButtonNewAccount
+  TextButtonNewAccount,
 } from './styles';
 
 import {useNavigation} from '@react-navigation/native';
 
 const Login = () => {
-
   const [valueEmail, onChangeEmail] = useState('');
   const [valuePassword, onChangePassword] = useState('');
 
@@ -51,15 +50,15 @@ const Login = () => {
 
       <ContainerInputsDataCard>
         <ContainerNameAndNumber>
-          <InputNameVaccine 
-            onChangeText={text => onChangeEmail(text)}
+          <InputNameVaccine
+            onChangeText={(text) => onChangeEmail(text)}
             value={valueEmail}
             placeholder="Seu e-mail"
             placeholderTextColor="#000000"
           />
 
-          <InputNumberVaccine 
-            onChangeText={text => onChangePassword(text)}
+          <InputNumberVaccine
+            onChangeText={(text) => onChangePassword(text)}
             value={valuePassword}
             placeholder="Sua senha"
             placeholderTextColor="#000000"
