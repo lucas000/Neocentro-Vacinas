@@ -29,14 +29,6 @@ const Routes = () => {
             backgroundColor: '#3498db',
           },
         }}>
-        
-        <AppStack.Screen
-          name={'DetailsAppointment'}
-          component={DetailsAppointment}
-        />
-        <AppStack.Screen name={'Appointments'} component={Appointments} />
-
-
         <AppStack.Screen name={'Main'} component={Main} />
         <AppStack.Screen name={'SelectAge'} component={SelectAge} />
         <AppStack.Screen name={'Vaccines'} component={Vaccines} />
@@ -50,7 +42,11 @@ const Routes = () => {
         <AppStack.Screen name={'SignUp'} component={SignUp} />
         <AppStack.Screen name={'AccountNotLoged'} component={AccountNotLoged} />
         <AppStack.Screen name={'AccountLogged'} component={AccountLogged} />
-        
+        <AppStack.Screen name={'Appointments'} component={Appointments} />
+        <AppStack.Screen
+          name={'DetailsAppointment'}
+          component={DetailsAppointment}
+        />
         <AppStack.Screen name={'UpdateAccount'} component={UpdateAccount} />
       </AppStack.Navigator>
     </NavigationContainer>
