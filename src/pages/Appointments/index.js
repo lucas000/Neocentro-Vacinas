@@ -44,30 +44,30 @@ const Appointments = () => {
       <ContainerItemsAppointment>
         <ContainerListAppointments>
           <ItemAppointment onPress={handleInfoAppointment} />
-          <ItemAppointment />
-          <ItemAppointment />
-          <ItemAppointment />
-          <ItemAppointment />
-          <ItemAppointment />
-          <ItemAppointment />
-          <ItemAppointment />
-          <ItemAppointment />
-          <ItemAppointment />
-          <ItemAppointment />
-          <ItemAppointment />
-          <ItemAppointment />
-          <ItemAppointment />
-          <ItemAppointment />
-          <ItemAppointment />
-          <ItemAppointment />
-          <ItemAppointment />
-          <ItemAppointment />
-          <ItemAppointment />
-          <ItemAppointment />
-          <ItemAppointment />
-          <ItemAppointment />
-          <ItemAppointment />
-          <ItemAppointment />
+          <ItemAppointment onPress={handleInfoAppointment} />
+          <ItemAppointment onPress={handleInfoAppointment} />
+          <ItemAppointment onPress={handleInfoAppointment} />
+          <ItemAppointment onPress={handleInfoAppointment} />
+          <ItemAppointment onPress={handleInfoAppointment} />
+          <ItemAppointment onPress={handleInfoAppointment} />
+          <ItemAppointment onPress={handleInfoAppointment} />
+          <ItemAppointment onPress={handleInfoAppointment} />
+          <ItemAppointment onPress={handleInfoAppointment} />
+          <ItemAppointment onPress={handleInfoAppointment} />
+          <ItemAppointment onPress={handleInfoAppointment} />
+          <ItemAppointment onPress={handleInfoAppointment} />
+          <ItemAppointment onPress={handleInfoAppointment} />
+          <ItemAppointment onPress={handleInfoAppointment} />
+          <ItemAppointment onPress={handleInfoAppointment} />
+          <ItemAppointment onPress={handleInfoAppointment} />
+          <ItemAppointment onPress={handleInfoAppointment} />
+          <ItemAppointment onPress={handleInfoAppointment} />
+          <ItemAppointment onPress={handleInfoAppointment} />
+          <ItemAppointment onPress={handleInfoAppointment} />
+          <ItemAppointment onPress={handleInfoAppointment} />
+          <ItemAppointment onPress={handleInfoAppointment} />
+          <ItemAppointment onPress={handleInfoAppointment} />
+          <ItemAppointment onPress={handleInfoAppointment} />
         </ContainerListAppointments>
       </ContainerItemsAppointment>
     </Container>

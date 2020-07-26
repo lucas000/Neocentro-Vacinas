@@ -1,6 +1,5 @@
 import styled from 'styled-components/native';
 import FeatherIcon from 'react-native-vector-icons/Feather';
-import {RectButton} from 'react-native-gesture-handler';
 
 export const Container = styled.View`
   flex-direction: row;
@@ -24,7 +23,7 @@ export const Quantity = styled.Text`
   color: #008789;
 `;
 
-export const ButtonInfo = styled(RectButton)`
+export const ButtonInfo = styled.TouchableOpacity`
   margin-left: 100px;
   border-radius: 5px;
   align-items: center;

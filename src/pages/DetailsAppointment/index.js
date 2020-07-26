@@ -15,12 +15,17 @@ import {
 import ItemVaccineAppointment from '../../components/ItemVaccineAppointment';
 import {useNavigation} from '@react-navigation/native';
 import profile from '../../assets/profile.jpg';
+import {Alert} from 'react-native';
 
 const DetailsAppointment = () => {
   const navigation = useNavigation();
 
   function handleGoBack() {
     navigation.goBack();
+  }
+
+  function handleInfoVaccine() {
+    Alert.alert('Ver vacina', 'Ir para a tela de ver informações!');
   }
 
   return (
@@ -39,8 +44,8 @@ const DetailsAppointment = () => {
 
       <ContainerItemsVaccines>
         <ContainerListVaccines>
-          <ItemVaccineAppointment />
-          <ItemVaccineAppointment />
+          <ItemVaccineAppointment onPress={handleInfoVaccine} />
+          <ItemVaccineAppointment onPress={handleInfoVaccine} />
         </ContainerListVaccines>
       </ContainerItemsVaccines>
     </Container>

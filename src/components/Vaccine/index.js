@@ -2,7 +2,7 @@ import React from 'react';
 
 import {
   Container,
-  PropertiesVaccine, 
+  PropertiesVaccine,
   NameVaccine,
   SubNameVaccina,
   ContainerPrice,
@@ -13,7 +13,7 @@ import {
   IconLess,
   Quantity,
   AddQuantity,
-  IconAdd
+  IconAdd,
 } from './styles';
 
 const Vaccine = () => {
@@ -22,10 +22,10 @@ const Vaccine = () => {
       <PropertiesVaccine>
         <NameVaccine>Febre amarela</NameVaccine>
         <SubNameVaccina>Febre Amarela (Stamaril@)</SubNameVaccina>
-          <ContainerPrice>
-            <Price>R$ 144,00</Price>
-            <IconInfo size={24} name="info" style={{color: '#008789'}} />
-          </ContainerPrice>
+        <ContainerPrice>
+          <Price>R$ 144,00</Price>
+          <IconInfo size={24} name="info" style={{color: '#008789'}} />
+        </ContainerPrice>
       </PropertiesVaccine>
       <ContainerControllQuantity>
         <RemoveQuantity onPress={() => {}}>

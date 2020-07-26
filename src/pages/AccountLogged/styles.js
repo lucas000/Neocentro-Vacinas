@@ -1,6 +1,5 @@
 import styled from 'styled-components/native';
 import FeatherIcon from 'react-native-vector-icons/Feather';
-import {RectButton} from 'react-native-gesture-handler';
 
 export const Container = styled.View`
   flex: 1;
@@ -37,7 +36,7 @@ export const ContainerAccountOptions = styled.View`
   margin-top: 50px;
 `;
 
-export const ButtonLoginInAccount = styled(RectButton)`
+export const ButtonLoginInAccount = styled.TouchableOpacity`
   flex-direction: row;
   margin-top: 20px;
 `;
@@ -51,7 +50,7 @@ export const PerfilText = styled.Text`
   font-family: 'Roboto-Medium';
 `;
 
-export const ButtonVaccinescheduled = styled(RectButton)`
+export const ButtonVaccinescheduled = styled.TouchableOpacity`
   flex-direction: row;
   margin-top: 20px;
 `;
@@ -65,7 +64,7 @@ export const VaccinescheduledText = styled.Text`
   font-family: 'Roboto-Medium';
 `;
 
-export const ButtonPaymentWay = styled(RectButton)`
+export const ButtonPaymentWay = styled.TouchableOpacity`
   flex-direction: row;
   margin-top: 20px;
 `;
@@ -79,7 +78,7 @@ export const PaymentWayText = styled.Text`
   font-family: 'Roboto-Medium';
 `;
 
-export const ButtonLogout = styled(RectButton)`
+export const ButtonLogout = styled.TouchableOpacity`
   flex-direction: row;
   margin-top: 20px;
 `;
