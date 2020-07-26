@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, {useState, useCallback} from 'react';
+import DateTimePicker from '@react-native-community/datetimepicker';
 
 import {
   Container,
@@ -7,20 +8,24 @@ import {
   IconArrowBack,
   SelectDate,
   AvatarContainer,
+  OpenDatePickerButton,
+  OpenDatePickerText,
   Avatar,
   ContainerCalendar,
   ButtonContinue,
   TextButtonContinue,
-  PickerDate
-  } from './styles';
-  
+  PickerDate,
+} from './styles';
+
 import {useNavigation} from '@react-navigation/native';
 
 import profile from '../../assets/profile.jpg';
-import { Picker } from 'react-native';
+import {Picker} from 'react-native';
 
 const SelectDateAppointment = () => {
-  const [selectedValue, setSelectedValue] = useState("Selecionar data");
+  const [selectedValue, setSelectedValue] = useState('Selecionar data');
+  const [showDatePicker, setShowDatePicker] = useState(false);
+
   const navigation = useNavigation();
 
   function handleGoBack() {
@@ -29,13 +34,17 @@ const SelectDateAppointment = () => {
 
   function handleToSelectDateAppointment() {
     navigation.navigate('SummaryOrder');
-  };
+  }
+
+  const handleToggleDatePicker = useCallback(() => {
+    setShowDatePicker((state) => !state);
+  }, []);
 
   return (
     <Container>
       <Header>
         <BackButton onPress={handleGoBack}>
-            <IconArrowBack size={24} name="arrow-left" style={{color: '#000'}} />
+          <IconArrowBack size={24} name="arrow-left" style={{color: '#000'}} />
         </BackButton>
 
         <SelectDate>Selecionar data</SelectDate>
@@ -45,12 +54,25 @@ const SelectDateAppointment = () => {
         </AvatarContainer>
       </Header>
 
-      <ContainerCalendar />
+      <ContainerCalendar>
+        <OpenDatePickerButton onPress={handleToggleDatePicker}>
+          <OpenDatePickerText>Selecionar outra data</OpenDatePickerText>
+        </OpenDatePickerButton>
+
+        {showDatePicker && (
+          <DateTimePicker
+            mode="date"
+            display="calendar"
+            onChange={() => {}}
+            textColor="#008789"
+            value={new Date()}
+          />
+        )}
+      </ContainerCalendar>
 
       <PickerDate
         selectedValue={selectedValue}
-        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
-        >
+        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}>
         <Picker.Item label="23/07/2020 - 08:00" value="08:00" />
         <Picker.Item label="23/07/2020 - 09:00" value="09:00" />
         <Picker.Item label="23/07/2020 - 10:00" value="10:00" />

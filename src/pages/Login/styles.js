@@ -60,7 +60,7 @@ export const InputNumberVaccine = styled.TextInput`
 export const ButtonLogin = styled(RectButton)`
   width: 80%;
   height: 48px;
-  background: #1abc9c;
+  background: #008789;
   border-radius: 5px;
   align-items: center;
   justify-content: center;
@@ -95,14 +95,14 @@ export const TextButtonLoginSocial = styled.Text`
 
 export const RecoveryPassword = styled.Text`
   font-size: 20px;
-  color: #1abc9c;
+  color: #008789;
   font-family: 'Roboto-Regular';
 `;
 
 export const ButtonNewAccount = styled(RectButton)`
   width: 80%;
   height: 48px;
-  background: #1abc9c;
+  background: #008789;
   border-radius: 5px;
   align-items: center;
   justify-content: center;

@@ -56,7 +56,7 @@ export const ButtonGroup = styled.TouchableOpacity`
   width: 100%;
   height: 90px;
   border-radius: 5px;
-  background: #1abc9c;
+  background: #008789;
   margin-top: 25px;
 `;
 

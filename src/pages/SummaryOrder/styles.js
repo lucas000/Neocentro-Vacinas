@@ -48,13 +48,13 @@ export const DateAppointmentContainer = styled.View`
 export const TextDateAppointment = styled.Text`
   font-size: 18px;
   font-family: 'Roboto-Medium';
-  color: #1abc9c;
+  color: #008789;
 `;
 
 export const TextAppointmentIn = styled.Text`
   font-size: 16px;
   font-family: 'Roboto-Medium';
-  color: #1abc9c;
+  color: #008789;
   align-self: flex-end;
   margin-left: 5px;
   margin-right: 5px;
@@ -63,20 +63,20 @@ export const TextAppointmentIn = styled.Text`
 export const TextTimeAppointment = styled.Text`
   font-size: 18px;
   font-family: 'Roboto-Medium';
-  color: #1abc9c;
+  color: #008789;
 `;
 
 export const TextVaccinesLabel = styled.Text`
   font-size: 20px;
   font-family: 'Roboto-Medium';
-  color: #1abc9c;
+  color: #008789;
   margin-right: auto;
   margin-left: 30px;
 `;
 
 export const LineDivisor = styled.View`
   width: 100%;
-  border-bottom-color: #1abc9c;
+  border-bottom-color: #008789;
   border-bottom-width: 2px;
 `;
 
@@ -104,14 +104,14 @@ export const TotalOrder = styled.View`
 export const TotalOrderText = styled.Text`
   font-size: 16px;
   font-family: 'Roboto-Medium';
-  color: #1abc9c;
+  color: #008789;
 `;
 
 export const TotalOrderPrice = styled.Text`
   font-size: 16px;
   margin-left: 5px;
   font-family: 'Roboto-Medium';
-  color: #1abc9c;
+  color: #008789;
 `;
 
 export const Total = styled.View`
@@ -134,7 +134,7 @@ export const TotalPrice = styled.Text`
 
 export const OptionsSubdivision = styled.Text`
   font-family: 'Roboto-Medium';
-  color: #1abc9c;
+  color: #008789;
   font-size: 12px;
 `;
 
@@ -155,13 +155,13 @@ export const ButtonBack = styled(RectButton)`
 
 export const TextButtonBack = styled.Text`
   font-size: 20px;
-  color: #1abc9c;
+  color: #008789;
   font-family: 'Roboto-Regular';
 `;
 
 export const ButtonContinue = styled(RectButton)`
   height: 48px;
-  background: #1abc9c;
+  background: #008789;
   border-radius: 5px;
   align-items: center;
   justify-content: center;

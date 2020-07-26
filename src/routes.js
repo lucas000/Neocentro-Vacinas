@@ -32,10 +32,12 @@ const Routes = () => {
         <AppStack.Screen name={'Main'} component={Main} />
         <AppStack.Screen name={'SelectAge'} component={SelectAge} />
         <AppStack.Screen name={'Vaccines'} component={Vaccines} />
+
         <AppStack.Screen
           name={'SelectDateAppointment'}
           component={SelectDateAppointment}
         />
+
         <AppStack.Screen name={'SummaryOrder'} component={SummaryOrder} />
         <AppStack.Screen name={'PaymentWay'} component={PaymentWay} />
         <AppStack.Screen name={'Login'} component={Login} />

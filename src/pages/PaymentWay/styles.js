@@ -33,7 +33,7 @@ export const PaymentWayText = styled.Text`
 export const ButtonContinue = styled(RectButton)`
   width: 80%;
   height: 48px;
-  background: #1abc9c;
+  background: #008789;
   border-radius: 5px;
   align-items: center;
   justify-content: center;

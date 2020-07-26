@@ -35,7 +35,7 @@ export const UserAvatar = styled.Image`
 export const ButtonSchedule = styled(RectButton)`
   width: 80%;
   height: 48px;
-  background: #1abc9c;
+  background: #008789;
   margin-left: 40px;
   margin-top: 180px;
   border-radius: 5px;
@@ -59,6 +59,6 @@ export const CompanyName = styled.Text`
   font-size: 22px;
   margin-top: 30px;
   margin-left: 95px;
-  color: #1abc9c;
+  color: #008789;
   font-family: 'Roboto-Regular';
 `;

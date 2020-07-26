@@ -23,7 +23,7 @@ export const NameVaccine = styled.Text`
 `;
 
 export const SubNameVaccina = styled.Text`
-  color: #1abc9c;
+  color: #008789;
   font-size: 12px;
   font-family: 'Roboto-Regular';
 `;

@@ -18,7 +18,7 @@ const ItemVaccineAppointment = (props) => {
       </ContainerVaccine>
 
       <ButtonInfo onPress={() => props.onPress()}>
-        <IconInfo size={24} name="info" style={{color: '#1abc9c'}} />
+        <IconInfo size={24} name="info" style={{color: '#008789'}} />
       </ButtonInfo>
     </Container>
   );

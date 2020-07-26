@@ -34,7 +34,7 @@ export const UpdateAccountText = styled.Text`
 export const ButtonContinue = styled(RectButton)`
   width: 80%;
   height: 48px;
-  background: #1abc9c;
+  background: #008789;
   border-radius: 5px;
   align-items: center;
   justify-content: center;
@@ -163,7 +163,7 @@ export const ContainerUseTerms = styled.View`
 `;
 
 export const CheckboxTerms = styled(Checkbox)`
-  border-color: #1abc9c;
+  border-color: #008789;
 `;
 
 export const TextAcceptTerms = styled.Text`
@@ -173,5 +173,5 @@ export const TextAcceptTerms = styled.Text`
 export const TextTermsLink = styled.Text`
   margin-left: 5px;
   font-size: 14px;
-  color: #1abc9c;
+  color: #008789;
 `;
