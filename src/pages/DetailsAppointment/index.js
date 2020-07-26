@@ -9,7 +9,7 @@ import {
   AvatarContainer,
   Avatar,
   ContainerItemsVaccines,
-  ContainerListVaccines
+  ContainerListVaccines,
 } from './styles';
 
 import ItemVaccineAppointment from '../../components/ItemVaccineAppointment';

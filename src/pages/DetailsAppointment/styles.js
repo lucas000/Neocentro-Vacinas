@@ -1,5 +1,4 @@
 import styled from 'styled-components/native';
-import {RectButton} from 'react-native-gesture-handler';
 import Feather from 'react-native-vector-icons/Feather';
 
 export const Container = styled.View`
@@ -39,8 +38,7 @@ export const Avatar = styled.Image`
 
 export const ContainerItemsVaccines = styled.View`
   width: 100%;
-  height: 100%;
-  align-items: center;
+  padding: 0 10px;
 `;
 
 export const ContainerListVaccines = styled.ScrollView`

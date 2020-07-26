@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 import {RectButton} from 'react-native-gesture-handler';
-import { Checkbox } from 'react-native-paper';
+import {Checkbox} from 'react-native-paper';
 
 export const Container = styled.View`
   flex: 1;
@@ -55,11 +55,11 @@ export const ContainerInputsDataCard = styled.View`
   margin-top: 60px;
 `;
 
-export const ContainerNameAndNumber = styled.View`
-`;
+export const ContainerNameAndNumber = styled.View``;
 
 export const InputNameVaccine = styled.TextInput`
   font-size: 16px;
+  border-radius: 5px;
   margin-right: auto;
   background-color: #f7f7f7;
   margin: 10px 10px 5px 10px;
@@ -68,18 +68,21 @@ export const InputNameVaccine = styled.TextInput`
 export const InputNumberVaccine = styled.TextInput`
   font-size: 16px;
   margin-right: auto;
+  border-radius: 5px;
   background-color: #f7f7f7;
   margin: 5px 10px 10px 10px;
 `;
 
 export const ContainerDateExpirationAndCVV = styled.View`
   flex-direction: row;
+  border-radius: 5px;
   margin-top: 10px;
 `;
 
 export const InputPhoneNumber = styled.TextInput`
   font-size: 16px;
   margin-left: 110px;
+  border-radius: 5px;
   background-color: #f7f7f7;
   padding-right: 10px;
   padding-left: 10px;
@@ -87,6 +90,7 @@ export const InputPhoneNumber = styled.TextInput`
 
 export const InputDDD = styled.TextInput`
   font-size: 16px;
+  border-radius: 5px;
   background-color: #f7f7f7;
   padding-left: 10px;
 `;
@@ -94,6 +98,7 @@ export const InputDDD = styled.TextInput`
 export const CPF = styled.TextInput`
   font-size: 16px;
   width: 328px;
+  border-radius: 5px;
   margin-top: 10px;
   background-color: #f7f7f7;
   padding-left: 10px;
@@ -103,6 +108,7 @@ export const InputName = styled.TextInput`
   font-size: 16px;
   width: 328px;
   margin-top: 10px;
+  border-radius: 5px;
   background-color: #f7f7f7;
   padding-left: 10px;
 `;
@@ -111,6 +117,7 @@ export const InputSurname = styled.TextInput`
   font-size: 16px;
   width: 328px;
   margin-top: 10px;
+  border-radius: 5px;
   background-color: #f7f7f7;
   padding-left: 10px;
 `;
@@ -118,6 +125,7 @@ export const InputSurname = styled.TextInput`
 export const InputEmail = styled.TextInput`
   font-size: 16px;
   width: 328px;
+  border-radius: 5px;
   margin-top: 10px;
   background-color: #f7f7f7;
   padding-left: 10px;
@@ -127,6 +135,7 @@ export const InputDateBorn = styled.TextInput`
   font-size: 16px;
   width: 328px;
   margin-top: 10px;
+  border-radius: 5px;
   background-color: #f7f7f7;
   padding-left: 10px;
 `;
@@ -135,15 +144,16 @@ export const InputNameMother = styled.TextInput`
   font-size: 16px;
   width: 328px;
   margin-top: 10px;
+  border-radius: 5px;
   background-color: #f7f7f7;
   padding-left: 10px;
 `;
-
 
 export const ConfirmPassword = styled.TextInput`
   font-size: 16px;
   width: 328px;
   margin-top: 10px;
+  border-radius: 5px;
   background-color: #f7f7f7;
   padding-left: 10px;
 `;

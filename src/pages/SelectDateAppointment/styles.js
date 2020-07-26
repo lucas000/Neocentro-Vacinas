@@ -37,7 +37,6 @@ export const Avatar = styled.Image`
 `;
 
 export const ContainerCalendar = styled.View`
-  background-color: #f7f7f7;
   width: 95%;
   border-radius: 5px;
   margin: 20px 0;

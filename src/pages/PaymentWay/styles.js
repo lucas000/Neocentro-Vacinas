@@ -61,6 +61,7 @@ export const ContainerNameAndNumber = styled.View`
 export const InputNameVaccine = styled.TextInput`
   font-size: 16px;
   margin-right: auto;
+  border-radius: 5px;
   background-color: #f7f7f7;
   margin: 10px 10px 5px 10px;
 `;
@@ -68,6 +69,7 @@ export const InputNameVaccine = styled.TextInput`
 export const InputNumberVaccine = styled.TextInput`
   font-size: 16px;
   margin-right: auto;
+  border-radius: 5px;
   background-color: #f7f7f7;
   margin: 5px 10px 10px 10px;
 `;
@@ -75,12 +77,14 @@ export const InputNumberVaccine = styled.TextInput`
 export const ContainerDateExpirationAndCVV = styled.View`
   flex-direction: row;
   width: 352px;
+  border-radius: 5px;
   margin-left: 20px;
 `;
 
 export const InputDateExpiration = styled.TextInput`
   font-size: 16px;
   margin-right: auto;
+  border-radius: 5px;
   background-color: #f7f7f7;
   padding-right: 10px;
 `;
@@ -88,6 +92,7 @@ export const InputDateExpiration = styled.TextInput`
 export const InputCVVCard = styled.TextInput`
   font-size: 16px;
   margin-right: auto;
+  border-radius: 5px;
   background-color: #f7f7f7;
   padding-left: 10px;
 `;
@@ -96,6 +101,7 @@ export const CPF = styled.TextInput`
   font-size: 16px;
   width: 328px;
   margin-top: 10px;
+  border-radius: 5px;
   background-color: #f7f7f7;
   padding-left: 10px;
 `;

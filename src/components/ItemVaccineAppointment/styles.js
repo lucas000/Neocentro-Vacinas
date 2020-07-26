@@ -7,12 +7,10 @@ export const Container = styled.View`
   background-color: #f7f7f7;
   border-radius: 5px;
   padding: 10px;
-  width: 300px;
   margin-bottom: 10px;
 `;
 
-export const ContainerVaccine = styled.View`
-`;
+export const ContainerVaccine = styled.View``;
 
 export const DateAppointment = styled.Text`
   font-size: 18px;
@@ -34,5 +32,5 @@ export const ButtonInfo = styled(RectButton)`
 `;
 
 export const IconInfo = styled(FeatherIcon)`
-  margin-left: 20px;
+  margin-left: 50%;
 `;

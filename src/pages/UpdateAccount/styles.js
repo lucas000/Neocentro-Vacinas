@@ -76,6 +76,7 @@ export const InputNameVaccine = styled.TextInput`
 export const InputNumberVaccine = styled.TextInput`
   font-size: 16px;
   margin-right: auto;
+  border-radius: 5px;
   background-color: #f7f7f7;
   margin: 5px 10px 10px 10px;
 `;
@@ -89,6 +90,7 @@ export const InputPhoneNumber = styled.TextInput`
   font-size: 16px;
   margin-left: 110px;
   background-color: #f7f7f7;
+  border-radius: 5px;
   padding-right: 10px;
   padding-left: 10px;
 `;
@@ -97,10 +99,12 @@ export const InputDDD = styled.TextInput`
   font-size: 16px;
   background-color: #f7f7f7;
   padding-left: 10px;
+  border-radius: 5px;
 `;
 
 export const CPF = styled.TextInput`
   font-size: 16px;
+  border-radius: 5px;
   width: 328px;
   margin-top: 10px;
   background-color: #f7f7f7;
@@ -110,6 +114,7 @@ export const CPF = styled.TextInput`
 export const InputName = styled.TextInput`
   font-size: 16px;
   width: 328px;
+  border-radius: 5px;
   margin-top: 10px;
   background-color: #f7f7f7;
   padding-left: 10px;
@@ -118,6 +123,7 @@ export const InputName = styled.TextInput`
 export const InputSurname = styled.TextInput`
   font-size: 16px;
   width: 328px;
+  border-radius: 5px;
   margin-top: 10px;
   background-color: #f7f7f7;
   padding-left: 10px;
@@ -127,6 +133,7 @@ export const InputEmail = styled.TextInput`
   font-size: 16px;
   width: 328px;
   margin-top: 10px;
+  border-radius: 5px;
   background-color: #f7f7f7;
   padding-left: 10px;
 `;
@@ -136,6 +143,7 @@ export const InputDateBorn = styled.TextInput`
   width: 328px;
   margin-top: 10px;
   background-color: #f7f7f7;
+  border-radius: 5px;
   padding-left: 10px;
 `;
 
@@ -144,6 +152,7 @@ export const InputNameMother = styled.TextInput`
   width: 328px;
   margin-top: 10px;
   background-color: #f7f7f7;
+  border-radius: 5px;
   padding-left: 10px;
 `;
 
@@ -151,6 +160,7 @@ export const ConfirmPassword = styled.TextInput`
   font-size: 16px;
   width: 328px;
   margin-top: 10px;
+  border-radius: 5px;
   background-color: #f7f7f7;
   padding-left: 10px;
 `;

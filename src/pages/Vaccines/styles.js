@@ -48,14 +48,12 @@ export const TextButtonContinue = styled.Text`
 `;
 
 export const SearchVaccineContainer = styled.View`
-  width: 91%;
   height: 40px;
   flex-direction: row;
   align-items: center;
-  
   border-radius: 6px;
+  margin: 0 10px;
   justify-content: center;
-  margin-left: 25px;
   background-color: #f7f7f7;
 `;
 
@@ -65,9 +63,8 @@ export const InputNameVaccine = styled.TextInput`
   padding: 5px 5px 5px 15px;
 `;
 
-export const SearchButton = styled.TouchableOpacity`
-`;
-  
+export const SearchButton = styled.TouchableOpacity``;
+
 export const IconSearch = styled(FeatherIcon)`
   font-size: 24px;
   margin-right: 15px;
@@ -77,5 +74,4 @@ export const IconSearch = styled(FeatherIcon)`
 export const ContainerListVaccines = styled.ScrollView`
   margin-top: 8px;
   margin-bottom: 12px;
-  margin-left: 14px;
 `;
