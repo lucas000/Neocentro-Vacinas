@@ -19,7 +19,7 @@ export const BackButton = styled.TouchableOpacity``;
 export const IconArrowBack = styled(FeatherIcon)``;
 
 export const MyAppointmentsText = styled.Text`
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'Roboto-Medium';
   margin-left: 55px;
 `;

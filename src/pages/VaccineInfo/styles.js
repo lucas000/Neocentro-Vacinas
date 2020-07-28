@@ -18,7 +18,7 @@ export const BackButton = styled.TouchableOpacity``;
 export const IconArrowBack = styled(Feather)``;
 
 export const VaccineDetailsText = styled.Text`
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'Roboto-Medium';
   margin-left: 113px;
 `;
