@@ -15,7 +15,6 @@ import {
 import ItemVaccineAppointment from '../../components/ItemVaccineAppointment';
 import {useNavigation} from '@react-navigation/native';
 import profile from '../../assets/profile.jpg';
-import {Alert} from 'react-native';
 
 const DetailsAppointment = () => {
   const navigation = useNavigation();
@@ -25,7 +24,7 @@ const DetailsAppointment = () => {
   }
 
   function handleInfoVaccine() {
-    Alert.alert('Ver vacina', 'Ir para a tela de ver informações!');
+    navigation.navigate('VaccineInfo');
   }
 
   return (

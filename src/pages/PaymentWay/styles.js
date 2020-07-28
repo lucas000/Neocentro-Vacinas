@@ -26,7 +26,8 @@ export const IconArrowBack = styled(FeatherIcon)`
 
 export const PaymentWayText = styled.Text`
   font-size: 20px;
-  margin-left: 50px;
+  margin-left: 58px;
+  font-family: 'Roboto-Medium';
   color: #000;
 `;
 

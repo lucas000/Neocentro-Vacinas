@@ -27,6 +27,7 @@ export const IconArrowBack = styled(FeatherIcon)`
 export const LoginText = styled.Text`
   font-size: 20px;
   margin-left: 125px;
+  font-family: 'Roboto-Medium';
   color: #000;
 `;
 

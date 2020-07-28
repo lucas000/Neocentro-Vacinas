@@ -28,6 +28,7 @@ export const IconArrowBack = styled(FeatherIcon)`
 export const UpdateAccountText = styled.Text`
   font-size: 20px;
   margin-left: 95px;
+  font-family: 'Roboto-Medium';
   color: #000;
 `;
 

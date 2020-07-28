@@ -41,9 +41,13 @@ export const Price = styled.Text`
   color: #008789;
 `;
 
-export const IconInfo = styled(FeatherIcon)`
-
+export const ButtonInfo = styled.TouchableOpacity`
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
 `;
+
+export const IconInfo = styled(FeatherIcon)``;
 
 export const ContainerControllQuantity = styled.View`
   flex-direction: row;
@@ -52,9 +56,7 @@ export const ContainerControllQuantity = styled.View`
   margin-right: 20px;
 `;
 
-export const RemoveQuantity = styled.TouchableOpacity`
-
-`;
+export const RemoveQuantity = styled.TouchableOpacity``;
 
 export const IconLess = styled(FeatherIcon)`
   margin-right: 5px;
@@ -69,6 +71,4 @@ export const AddQuantity = styled.TouchableOpacity`
   margin-left: 5px;
 `;
 
-export const IconAdd = styled(FeatherIcon)`
-
-`;
+export const IconAdd = styled(FeatherIcon)``;

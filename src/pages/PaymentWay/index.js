@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 
 import {
   Container,
@@ -17,7 +17,6 @@ import {
   InputCVVCard,
   CPF,
 } from './styles';
-
 
 import {useNavigation} from '@react-navigation/native';
 
@@ -50,15 +49,15 @@ const PaymentWay = () => {
 
       <ContainerInputsDataCard>
         <ContainerNameAndNumber>
-          <InputNameVaccine 
-            onChangeText={text => onChangeName(text)}
+          <InputNameVaccine
+            onChangeText={(text) => onChangeName(text)}
             value={valueName}
             placeholder="Nome do titular"
             placeholderTextColor="#000000"
           />
 
-          <InputNumberVaccine 
-            onChangeText={text => onChangeNumber(text)}
+          <InputNumberVaccine
+            onChangeText={(text) => onChangeNumber(text)}
             value={valueNumber}
             placeholder="Número do cartão"
             placeholderTextColor="#000000"
@@ -66,23 +65,23 @@ const PaymentWay = () => {
         </ContainerNameAndNumber>
 
         <ContainerDateExpirationAndCVV>
-          <InputDateExpiration 
-            onChangeText={text => onChangeDateExpiration(text)}
+          <InputDateExpiration
+            onChangeText={(text) => onChangeDateExpiration(text)}
             value={valueDateExpiration}
             placeholder="Data de expiração"
             placeholderTextColor="#000000"
           />
 
-          <InputCVVCard 
-            onChangeText={text => onChangeCVV(text)}
+          <InputCVVCard
+            onChangeText={(text) => onChangeCVV(text)}
             value={valueCVV}
             placeholder="Número do cartão"
             placeholderTextColor="#000000"
           />
         </ContainerDateExpirationAndCVV>
 
-        <CPF 
-          onChangeText={text => onChangeCPF(text)}
+        <CPF
+          onChangeText={(text) => onChangeCPF(text)}
           value={valueCPF}
           placeholder="CPF para nota"
           placeholderTextColor="#000000"

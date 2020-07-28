@@ -7,6 +7,7 @@ import {
   SubNameVaccina,
   ContainerPrice,
   Price,
+  ButtonInfo,
   IconInfo,
   ContainerControllQuantity,
   RemoveQuantity,
@@ -16,7 +17,7 @@ import {
   IconAdd,
 } from './styles';
 
-const Vaccine = () => {
+const Vaccine = (props) => {
   return (
     <Container>
       <PropertiesVaccine>
@@ -24,7 +25,9 @@ const Vaccine = () => {
         <SubNameVaccina>Febre Amarela (Stamaril@)</SubNameVaccina>
         <ContainerPrice>
           <Price>R$ 144,00</Price>
-          <IconInfo size={24} name="info" style={{color: '#008789'}} />
+          <ButtonInfo onPress={() => props.onPress()}>
+            <IconInfo size={24} name="info" style={{color: '#008789'}} />
+          </ButtonInfo>
         </ContainerPrice>
       </PropertiesVaccine>
       <ContainerControllQuantity>
