@@ -5,20 +5,24 @@ import {
   Header,
   BackButton,
   IconArrowBack,
-  MyAppointmentsText,
-  ContainerInputsDataCard,
-  ContainerNameAndNumber,
-  InputNameVaccine,
-  InputNumberVaccine,
+  SelectLocal,
+  ContainerLocal,
+  RadioClinic,
+  TextAcceptTerms,
   ButtonContinue,
+  ContainerClinicOption,
   TextButtonContinue,
+  PickerDate,
+  InputAdress,
 } from './styles';
 
+import {Picker, Alert} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 
 const ClinicUnit = () => {
-  const [valueName, onChangeName] = useState('');
-  const [valueNumber, onChangeNumber] = useState('');
+  const [valueAdress, onChangeAdress] = useState('');
+  const [checked, setChecked] = useState('first');
+  const [selectedValue, setSelectedValue] = useState('Selecionar data');
 
   const navigation = useNavigation();
 
@@ -27,6 +31,10 @@ const ClinicUnit = () => {
   }
 
   function handleSelectDate() {
+    Alert.alert(
+      'Data de agendamento',
+      'Para agendamentos em casa será agendando em no mínimo 48 horas antes e agendamentos na clínca 24 horas antes.',
+    );
     navigation.navigate('SelectDateAppointment');
   }
 
@@ -37,8 +45,44 @@ const ClinicUnit = () => {
           <IconArrowBack size={24} name="arrow-left" style={{color: '#000'}} />
         </BackButton>
 
-        <MyAppointmentsText>Selecionar clínica</MyAppointmentsText>
+        <SelectLocal>Selecionar local</SelectLocal>
       </Header>
+
+      <ContainerLocal>
+        <ContainerClinicOption>
+          <RadioClinic
+            value="first"
+            status={checked === 'first' ? 'checked' : 'unchecked'}
+            onPress={() => setChecked('first')}
+          />
+          <TextAcceptTerms>Vacinar em casa?</TextAcceptTerms>
+        </ContainerClinicOption>
+
+        <ContainerClinicOption>
+          <InputAdress
+            onChangeText={(text) => onChangeAdress(text)}
+            value={valueAdress}
+            placeholder="Endereço para vacinação"
+            placeholderTextColor="#000000"
+          />
+        </ContainerClinicOption>
+
+        <ContainerClinicOption style={{marginTop: 20}}>
+          <RadioClinic
+            value="second"
+            status={checked === 'second' ? 'checked' : 'unchecked'}
+            onPress={() => setChecked('second')}
+          />
+          <TextAcceptTerms>Vacinar em uma das nossas unidades?</TextAcceptTerms>
+        </ContainerClinicOption>
+      </ContainerLocal>
+
+      <PickerDate
+        selectedValue={selectedValue}
+        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}>
+        <Picker.Item label="Águas Claras" value="aguasclaras" />
+        <Picker.Item label="Terraço Shopping" value="terraco" />
+      </PickerDate>
 
       <ButtonContinue onPress={handleSelectDate}>
         <TextButtonContinue>Continuar</TextButtonContinue>

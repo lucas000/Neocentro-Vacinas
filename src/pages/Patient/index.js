@@ -59,7 +59,7 @@ const Patient = () => {
       </ContainerInputsDataCard>
 
       <ButtonContinue onPress={handleSelectClinic}>
-        <TextButtonContinue>Selecionar clínica</TextButtonContinue>
+        <TextButtonContinue>Selecionar local</TextButtonContinue>
       </ButtonContinue>
     </Container>
   );
