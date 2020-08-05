@@ -27,7 +27,11 @@ const Vaccines = () => {
   }
 
   function handleToSelectDateAppointment() {
-    navigation.navigate('SelectDateAppointment');
+    navigation.navigate('Patient');
+  }
+
+  function handlePatientDetails() {
+    navigation.navigate('Patient');
   }
 
   function handleVaccineInfoDetails() {
@@ -71,7 +75,8 @@ const Vaccines = () => {
         <Vaccine onPress={handleVaccineInfoDetails} />
         <Vaccine onPress={handleVaccineInfoDetails} />
       </ContainerListVaccines>
-      <ButtonContinue onPress={handleToSelectDateAppointment}>
+
+      <ButtonContinue onPress={handlePatientDetails}>
         <TextButtonContinue>Continuar</TextButtonContinue>
       </ButtonContinue>
     </Container>

@@ -16,6 +16,8 @@ import Appointments from './pages/Appointments';
 import DetailsAppointment from './pages/DetailsAppointment';
 import UpdateAccount from './pages/UpdateAccount';
 import VaccineInfo from './pages/VaccineInfo';
+import Patient from './pages/Patient';
+import ClinicUnit from './pages/ClinicUnit';
 
 const AppStack = createStackNavigator();
 
@@ -52,6 +54,8 @@ const Routes = () => {
         />
         <AppStack.Screen name={'UpdateAccount'} component={UpdateAccount} />
         <AppStack.Screen name={'VaccineInfo'} component={VaccineInfo} />
+        <AppStack.Screen name={'Patient'} component={Patient} />
+        <AppStack.Screen name={'ClinicUnit'} component={ClinicUnit} />
       </AppStack.Navigator>
     </NavigationContainer>
   );

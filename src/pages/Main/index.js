@@ -4,7 +4,6 @@ import {
   TextMain,
   ButtonSchedule,
   WelcomeContainer,
-  ContainerAvatar,
   UserAvatar,
   LogoCompany,
   CompanyName,

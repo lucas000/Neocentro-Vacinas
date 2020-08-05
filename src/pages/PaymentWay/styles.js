@@ -106,3 +106,14 @@ export const CPF = styled.TextInput`
   background-color: #f7f7f7;
   padding-left: 10px;
 `;
+
+export const ContactNumber = styled.TextInput`
+  font-size: 16px;
+  width: 328px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  padding-left: 10px;
+`;
+
+export const Adress = styled(ContactNumber)``;

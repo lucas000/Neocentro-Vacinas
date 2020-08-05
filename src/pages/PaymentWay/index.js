@@ -16,6 +16,8 @@ import {
   InputDateExpiration,
   InputCVVCard,
   CPF,
+  ContactNumber,
+  Adress,
 } from './styles';
 
 import {useNavigation} from '@react-navigation/native';
@@ -26,6 +28,8 @@ const PaymentWay = () => {
   const [valueCVV, onChangeCVV] = useState('');
   const [valueDateExpiration, onChangeDateExpiration] = useState('');
   const [valueCPF, onChangeCPF] = useState('');
+  const [valueContact, onChangeContat] = useState('');
+  const [valueAdress, onChangeAdress] = useState('');
 
   const navigation = useNavigation();
 
@@ -84,6 +88,20 @@ const PaymentWay = () => {
           onChangeText={(text) => onChangeCPF(text)}
           value={valueCPF}
           placeholder="CPF para nota"
+          placeholderTextColor="#000000"
+        />
+
+        <ContactNumber
+          onChangeText={(text) => onChangeContat(text)}
+          value={valueContact}
+          placeholder="Contato titular do cartão"
+          placeholderTextColor="#000000"
+        />
+
+        <Adress
+          onChangeText={(text) => onChangeAdress(text)}
+          value={valueAdress}
+          placeholder="Endereço para nota"
           placeholderTextColor="#000000"
         />
       </ContainerInputsDataCard>
