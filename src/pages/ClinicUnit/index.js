@@ -33,7 +33,7 @@ const ClinicUnit = () => {
   function handleSelectDate() {
     Alert.alert(
       'Data de agendamento',
-      'Para agendamentos em casa será agendando em no mínimo 48 horas antes e agendamentos na clínca 24 horas antes.',
+      'Para agendamentos em casa será agendado em no mínimo 48 horas antes\n\nPara agendamentos na clínca 24 horas antes.',
     );
     navigation.navigate('SelectDateAppointment');
   }

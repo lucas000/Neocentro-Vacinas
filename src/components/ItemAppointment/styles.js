@@ -32,8 +32,18 @@ export const Time = styled.Text`
   color: #008789;
 `;
 
-export const ButtonInfo = styled.TouchableOpacity`
+export const ButtonCancel = styled.TouchableOpacity`
   margin-left: 40px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const IconCancel = styled(FeatherIcon)`
+  margin-left: 20px;
+`;
+
+export const ButtonInfo = styled.TouchableOpacity`
   border-radius: 5px;
   align-items: center;
   justify-content: center;
