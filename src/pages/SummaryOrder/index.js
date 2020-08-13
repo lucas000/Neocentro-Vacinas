@@ -26,6 +26,7 @@ import {
   ContainerOptionsButtons,
   ButtonBack,
   TextButtonBack,
+  TextButtonContinue,
   ButtonContinue,
 } from './styles';
 
