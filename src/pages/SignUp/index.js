@@ -2,10 +2,6 @@ import React, {useState} from 'react';
 
 import {
   Container,
-  Header,
-  BackButton,
-  IconArrowBack,
-  SignUpText,
   ButtonContinue,
   TextButtonContinue,
   ContainerInputsDataCard,
@@ -27,6 +23,7 @@ import {
 } from './styles';
 
 import {useNavigation} from '@react-navigation/native';
+import HeaderPage from '../../components/HeaderPage';
 
 const SignUp = () => {
   const [valueName, onChangeName] = useState('');
@@ -43,23 +40,13 @@ const SignUp = () => {
 
   const navigation = useNavigation();
 
-  function handleGoBack() {
-    navigation.goBack();
-  }
-
   function handleSignUp() {
     navigation.navigate('Login');
   }
 
   return (
     <Container>
-      <Header>
-        <BackButton onPress={handleGoBack}>
-          <IconArrowBack size={24} name="arrow-left" style={{color: '#000'}} />
-        </BackButton>
-
-        <SignUpText>Novo cadastro</SignUpText>
-      </Header>
+      <HeaderPage title={'Novo cadastro'} />
 
       <ContainerInputsDataCard>
         <ContainerNameAndNumber>

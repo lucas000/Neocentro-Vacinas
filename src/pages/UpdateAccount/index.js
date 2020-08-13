@@ -2,10 +2,6 @@ import React, {useState} from 'react';
 
 import {
   Container,
-  Header,
-  BackButton,
-  IconArrowBack,
-  UpdateAccountText,
   ButtonContinue,
   TextButtonContinue,
   ContainerInputsDataCard,
@@ -26,6 +22,7 @@ import {
 
 import {useNavigation} from '@react-navigation/native';
 import profile from '../../assets/profile.jpg';
+import HeaderPage from '../../components/HeaderPage';
 
 const UpdateAccount = () => {
   const [valueName, onChangeName] = useState('');
@@ -38,13 +35,7 @@ const UpdateAccount = () => {
   const [valuePassword, onChangePassword] = useState('');
   const [valueConfirmPassword, onChangeConfirmPassword] = useState('');
 
-  const [checked, setChecked] = useState(false);
-
   const navigation = useNavigation();
-
-  function handleGoBack() {
-    navigation.goBack();
-  }
 
   function handleSaveChanges() {
     navigation.navigate('Main');
@@ -52,13 +43,7 @@ const UpdateAccount = () => {
 
   return (
     <Container>
-      <Header>
-        <BackButton onPress={handleGoBack}>
-          <IconArrowBack size={24} name="arrow-left" style={{color: '#000'}} />
-        </BackButton>
-
-        <UpdateAccountText>Alterar conta</UpdateAccountText>
-      </Header>
+      <HeaderPage title={'Alterar conta'} />
 
       <ContainerAvatar>
         <UserAvatar source={profile} />

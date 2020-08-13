@@ -2,10 +2,6 @@ import React, {useState} from 'react';
 
 import {
   Container,
-  Header,
-  BackButton,
-  IconArrowBack,
-  PaymentWayText,
   ButtonContinue,
   TextButtonContinue,
   ContainerInputsDataCard,
@@ -21,6 +17,7 @@ import {
 } from './styles';
 
 import {useNavigation} from '@react-navigation/native';
+import HeaderPage from '../../components/HeaderPage';
 
 const PaymentWay = () => {
   const [valueName, onChangeName] = useState('');
@@ -33,23 +30,13 @@ const PaymentWay = () => {
 
   const navigation = useNavigation();
 
-  function handleGoBack() {
-    navigation.goBack();
-  }
-
   function handleContinue() {
     navigation.navigate('Login');
   }
 
   return (
     <Container>
-      <Header>
-        <BackButton onPress={handleGoBack}>
-          <IconArrowBack size={24} name="arrow-left" style={{color: '#000'}} />
-        </BackButton>
-
-        <PaymentWayText>Forma de pagamento</PaymentWayText>
-      </Header>
+      <HeaderPage title={'Forma de pagamento'} />
 
       <ContainerInputsDataCard>
         <ContainerNameAndNumber>

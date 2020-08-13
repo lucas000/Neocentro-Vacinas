@@ -42,5 +42,5 @@ export const ContainerItemsAppointment = styled.View`
 
 export const ContainerListAppointments = styled.ScrollView`
   margin-top: 28px;
-  margin-bottom: 12px;
+  margin-bottom: 75px;
 `;

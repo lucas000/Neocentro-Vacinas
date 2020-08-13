@@ -1,9 +1,13 @@
 import React from 'react';
 
-import Routes from './src/routes';
+import Stack from './src/routes/AppStack';
 
 const App = () => {
-  return <Routes />;
+  return (
+    <>
+      <Stack />
+    </>
+  );
 };
 
 export default App;

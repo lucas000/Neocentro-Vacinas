@@ -27,7 +27,6 @@ import {
   ButtonBack,
   TextButtonBack,
   ButtonContinue,
-  TextButtonContinue
 } from './styles';
 
 import ItemOrder from '../../components/ItemOrder';
@@ -51,7 +50,7 @@ const SummaryOrder = () => {
     <Container>
       <Header>
         <BackButton onPress={handleGoBack}>
-            <IconArrowBack size={24} name="arrow-left" style={{color: '#000'}} />
+          <IconArrowBack size={24} name="arrow-left" style={{color: '#000'}} />
         </BackButton>
 
         <SelectDate>Dados do pedido</SelectDate>
@@ -67,11 +66,11 @@ const SummaryOrder = () => {
         <TextTimeAppointment>15:00</TextTimeAppointment>
       </DateAppointmentContainer>
 
-      <LineDivisor/>
+      <LineDivisor />
       <TextVaccinesLabel>Vacinas</TextVaccinesLabel>
       <LineDivisor />
 
-    <ContainerItemsOrder>
+      <ContainerItemsOrder>
         <ContainerListVaccines>
           <ItemOrder />
           <ItemOrder />
@@ -93,7 +92,6 @@ const SummaryOrder = () => {
       <LineDivisor />
 
       <TotalOrderAndTotal>
-
         <TotalOrder>
           <TotalOrderText>Total do pedido:</TotalOrderText>
           <TotalOrderPrice>R$ 144,40</TotalOrderPrice>
@@ -106,7 +104,7 @@ const SummaryOrder = () => {
       </TotalOrderAndTotal>
 
       <OptionsSubdivision>Ver opções de parcelamento</OptionsSubdivision>
-    
+
       <ContainerOptionsButtons>
         <ButtonBack onPress={handleGoBack}>
           <TextButtonBack>Voltar</TextButtonBack>

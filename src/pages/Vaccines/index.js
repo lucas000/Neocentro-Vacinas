@@ -2,10 +2,6 @@ import React, {useState} from 'react';
 
 import {
   Container,
-  Header,
-  BackButton,
-  IconArrowBack,
-  SelectVaccineText,
   ButtonContinue,
   TextButtonContinue,
   SearchVaccineContainer,
@@ -17,18 +13,11 @@ import {
 
 import {useNavigation} from '@react-navigation/native';
 import Vaccine from '../../components/Vaccine';
+import HeaderPage from '../../components/HeaderPage';
 
 const Vaccines = () => {
   const navigation = useNavigation();
   const [value, onChangeText] = useState('');
-
-  function handleGoBack() {
-    navigation.goBack();
-  }
-
-  function handleToSelectDateAppointment() {
-    navigation.navigate('Patient');
-  }
 
   function handlePatientDetails() {
     navigation.navigate('Patient');
@@ -40,13 +29,7 @@ const Vaccines = () => {
 
   return (
     <Container>
-      <Header>
-        <BackButton onPress={handleGoBack}>
-          <IconArrowBack size={24} name="arrow-left" style={{color: '#000'}} />
-        </BackButton>
-
-        <SelectVaccineText>Selecionar vacinas</SelectVaccineText>
-      </Header>
+      <HeaderPage title={'Selecionar vacinas'} />
 
       <SearchVaccineContainer>
         <InputNameVaccine

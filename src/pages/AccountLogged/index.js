@@ -2,10 +2,6 @@ import React from 'react';
 
 import {
   Container,
-  Header,
-  BackButton,
-  IconArrowBack,
-  AccountText,
   ButtonLoginInAccount,
   ContainerAccountOptions,
   IconPerfil,
@@ -22,13 +18,10 @@ import {
 } from './styles';
 
 import {useNavigation} from '@react-navigation/native';
+import HeaderPage from '../../components/HeaderPage';
 
 const AccountLogged = () => {
   const navigation = useNavigation();
-
-  function handleGoBack() {
-    navigation.goBack();
-  }
 
   function handleGoVaccinesSchedule() {
     navigation.navigate('Appointments');
@@ -48,13 +41,7 @@ const AccountLogged = () => {
 
   return (
     <Container>
-      <Header>
-        <BackButton onPress={handleGoBack}>
-          <IconArrowBack size={24} name="arrow-left" style={{color: '#000'}} />
-        </BackButton>
-
-        <AccountText>Conta</AccountText>
-      </Header>
+      <HeaderPage title={'Conta'} />
 
       <ContainerAccountOptions>
         <ButtonLoginInAccount onPress={handleClickProfile}>

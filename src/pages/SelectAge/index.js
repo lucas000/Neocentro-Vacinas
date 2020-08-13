@@ -61,7 +61,7 @@ const SelectAge = () => {
 
         <ButtonGroup onPress={handleGroupAdult}>
           <TextNameGroup>Adulto</TextNameGroup>
-          <TextAgeGroup>19 a 29 anos</TextAgeGroup>
+          <TextAgeGroup>19 a 59 anos</TextAgeGroup>
         </ButtonGroup>
 
         <ButtonGroup onPress={handleGroupElderly}>

@@ -2,10 +2,6 @@ import React, {useState} from 'react';
 
 import {
   Container,
-  Header,
-  BackButton,
-  IconArrowBack,
-  LoginText,
   ContainerInputsDataCard,
   ContainerNameAndNumber,
   InputNameVaccine,
@@ -20,16 +16,13 @@ import {
 } from './styles';
 
 import {useNavigation} from '@react-navigation/native';
+import HeaderPage from '../../components/HeaderPage';
 
 const Login = () => {
   const [valueEmail, onChangeEmail] = useState('');
   const [valuePassword, onChangePassword] = useState('');
 
   const navigation = useNavigation();
-
-  function handleGoBack() {
-    navigation.goBack();
-  }
 
   function handleLogin() {
     navigation.navigate('Main');
@@ -40,13 +33,7 @@ const Login = () => {
   }
   return (
     <Container>
-      <Header>
-        <BackButton onPress={handleGoBack}>
-          <IconArrowBack size={24} name="arrow-left" style={{color: '#000'}} />
-        </BackButton>
-
-        <LoginText>Entrar</LoginText>
-      </Header>
+      <HeaderPage title={'Entrar'} />
 
       <ContainerInputsDataCard>
         <ContainerNameAndNumber>

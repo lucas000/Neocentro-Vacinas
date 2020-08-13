@@ -2,10 +2,6 @@ import React from 'react';
 
 import {
   Container,
-  Header,
-  BackButton,
-  IconArrowBack,
-  VaccineDetailsText,
   ContainerInfoVaccine,
   TextIndication,
   Indication,
@@ -13,24 +9,12 @@ import {
   Destination,
 } from './styles';
 
-import {useNavigation} from '@react-navigation/native';
+import HeaderPage from '../../components/HeaderPage';
 
 const VaccineInfo = () => {
-  const navigation = useNavigation();
-
-  function handleGoBack() {
-    navigation.goBack();
-  }
-
   return (
     <Container>
-      <Header>
-        <BackButton onPress={handleGoBack}>
-          <IconArrowBack size={24} name="arrow-left" style={{color: '#000'}} />
-        </BackButton>
-
-        <VaccineDetailsText>Pentavalente</VaccineDetailsText>
-      </Header>
+      <HeaderPage title={'Pentavalente'} />
 
       <ContainerInfoVaccine>
         <TextIndication>Indicação</TextIndication>

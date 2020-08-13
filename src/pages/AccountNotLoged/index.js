@@ -9,15 +9,14 @@ import {
   ButtonLoginInAccount,
   ContainerLoginOption,
   IconUserAvatar,
-  LoginText
+  LoginText,
 } from './styles';
 
 import {useNavigation} from '@react-navigation/native';
 
 const AccountNotLoged = () => {
-
   const navigation = useNavigation();
-  
+
   function handleGoBack() {
     navigation.goBack();
   }

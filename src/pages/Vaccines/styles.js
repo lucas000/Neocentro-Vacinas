@@ -73,6 +73,5 @@ export const IconSearch = styled(FeatherIcon)`
 `;
 
 export const ContainerListVaccines = styled.ScrollView`
-  margin-top: 8px;
   margin-bottom: 12px;
 `;

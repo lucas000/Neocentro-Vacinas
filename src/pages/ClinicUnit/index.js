@@ -2,10 +2,6 @@ import React, {useState} from 'react';
 
 import {
   Container,
-  Header,
-  BackButton,
-  IconArrowBack,
-  SelectLocal,
   ContainerLocal,
   RadioClinic,
   TextAcceptTerms,
@@ -18,6 +14,7 @@ import {
 
 import {Picker, Alert} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
+import HeaderPage from '../../components/HeaderPage';
 
 const ClinicUnit = () => {
   const [valueAdress, onChangeAdress] = useState('');
@@ -25,10 +22,6 @@ const ClinicUnit = () => {
   const [selectedValue, setSelectedValue] = useState('Selecionar data');
 
   const navigation = useNavigation();
-
-  function handleGoBack() {
-    navigation.goBack();
-  }
 
   function handleSelectDate() {
     Alert.alert(
@@ -40,13 +33,7 @@ const ClinicUnit = () => {
 
   return (
     <Container>
-      <Header>
-        <BackButton onPress={handleGoBack}>
-          <IconArrowBack size={24} name="arrow-left" style={{color: '#000'}} />
-        </BackButton>
-
-        <SelectLocal>Selecionar local</SelectLocal>
-      </Header>
+      <HeaderPage title={'Selecionar local'} />
 
       <ContainerLocal>
         <ContainerClinicOption>

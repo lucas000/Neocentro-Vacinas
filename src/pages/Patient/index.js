@@ -2,10 +2,6 @@ import React, {useState} from 'react';
 
 import {
   Container,
-  Header,
-  BackButton,
-  IconArrowBack,
-  MyAppointmentsText,
   ContainerInputsDataCard,
   ContainerNameAndNumber,
   InputNameVaccine,
@@ -15,6 +11,7 @@ import {
 } from './styles';
 
 import {useNavigation} from '@react-navigation/native';
+import HeaderPage from '../../components/HeaderPage';
 
 const Patient = () => {
   const [valueName, onChangeName] = useState('');
@@ -22,23 +19,13 @@ const Patient = () => {
 
   const navigation = useNavigation();
 
-  function handleGoBack() {
-    navigation.goBack();
-  }
-
   function handleSelectClinic() {
     navigation.navigate('ClinicUnit');
   }
 
   return (
     <Container>
-      <Header>
-        <BackButton onPress={handleGoBack}>
-          <IconArrowBack size={24} name="arrow-left" style={{color: '#000'}} />
-        </BackButton>
-
-        <MyAppointmentsText>Paciente</MyAppointmentsText>
-      </Header>
+      <HeaderPage title={'Paciente'} />
 
       <ContainerInputsDataCard>
         <ContainerNameAndNumber>

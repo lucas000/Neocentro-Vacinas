@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+
 import {
   Container,
   TextMain,
@@ -38,7 +39,7 @@ const Main = () => {
       </WelcomeContainer>
 
       <ButtonSchedule onPress={handleScheduleVaccine}>
-        <TextButtonSchedule>Agendar uma vacina</TextButtonSchedule>
+        <TextButtonSchedule>Agendar sua vacina</TextButtonSchedule>
       </ButtonSchedule>
 
       <LogoCompany source={logo} />
